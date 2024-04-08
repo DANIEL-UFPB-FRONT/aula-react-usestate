@@ -12,7 +12,7 @@ function App() {
   return (
     <div id="container">
       <p>Você clicou {count} vezes</p>
-      <div>
+      <div id="container-buttom">
         <button onClick={() => setCount((prev) => prev + 1)}>Clique aqui</button>
         <button onClick={() => setCount(0)}>Limpar contador</button>
       </div>
@@ -26,7 +26,7 @@ function App() {
 
       */}
       <input type="text" onInput={event => setData({...data, message: event.target.value})}></input>
-      <span>{data.message}</span>
+      <h3>{data.message}</h3>
     </div>
   );
 }
